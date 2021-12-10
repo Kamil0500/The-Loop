@@ -1,0 +1,251 @@
+$accent: #d7b399;
+$black: #212121;
+$cream: #f9f6f1;
+$white: #ffffff;
+$link-water: #cbcfd4;
+$cinnabar: #d84033;
+$white-smoke: #f4f4f4;
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.page {
+  padding: 30px 0 50px;
+  &-light {
+    background-color: $cream;
+  }
+  &-dark {
+    background-color: $black;
+  }
+}
+
+.wrapper {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 126px;
+}
+.nav {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  &-item {
+    margin-left: 52px;
+  }
+  &-link {
+    color: $black;
+    text-decoration: none;
+  }
+}
+
+.cart {
+  background-image: url("/image/shopping-basket-button.svg");
+  background-repeat: no-repeat;
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding-left: 50px;
+  background-position: 0 center;
+  &-count {
+    background-image: url("/image/cart-bg.svg");
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    color: $white;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 10px 25px;
+    display: block;
+  }
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  &-item {
+    flex: 0 0 50%;
+  }
+}
+
+.sale {
+  &-description {
+    font-size: 30px;
+  }
+  &-title {
+    font-size: 55px;
+    font-weight: 700;
+  }
+}
+
+.title-h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.btn {
+  background-color: $accent;
+  color: $white;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 20px;
+  &-xs {
+    padding: 8px 20px;
+  }
+  &-center {
+    display: block;
+    text-align: center;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+  span {
+    margin-right: 15px;
+  }
+}
+
+.box {
+  position: relative;
+  &-price {
+    position: absolute;
+    right: 0;
+    text-align: right;
+    &-old {
+      font-size: 24px;
+      font-weight: 700;
+    }
+    &-new {
+      font-size: 42px;
+      font-weight: 700;
+      color: $cinnabar;
+      margin: 0;
+    }
+  }
+}
+
+.notice {
+  color: $white;
+  text-align: center;
+  padding: 80px 0 69px;
+  &-title {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 23px 0;
+  }
+  &-description {
+    font-size: 21px;
+    font-weight: 300;
+    margin: 0;
+  }
+}
+
+.collection {
+  display: flex;
+  justify-content: space-between;
+  &-item {
+    flex: 0 0 50%;
+    padding: 50px 0;
+    background-size: 190px 171px;
+    background-position: calc(100% - 50px) bottom;
+  }
+  &-man {
+    background-image: url("./image/man.png");
+    background-repeat: no-repeat;
+  }
+  &-woman {
+    background-image: url("./image/woman.png");
+    background-repeat: no-repeat;
+  }
+  &-title {
+    font-size: 24px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  &-description {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+}
+.product {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  &-title {
+    font-weight: 600;
+  }
+  &-price {
+    color: $accent;
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+  &-logo {
+    flex: 0 0 40%;
+  }
+  &-nav {
+    flex: 0 0 60%;
+    display: flex;
+    justify-content: space-between;
+    color: $white;
+  }
+  &-list {
+    list-style: none;
+    padding-left: 0;
+  &-link {
+    color: $link-water;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: flex;
+    &:hover {
+      color: $cinnabar;
+    }
+    &-vk {
+      background-image: url('/image/vk.svg');
+      background-repeat: no-repeat;
+      background-position-y: 2px;
+      display: block;
+      width: 25px;
+      margin-right: 5px;
+    }
+    &-fb {
+      background-image: url('/image/facebook.svg');
+      background-repeat: no-repeat;
+      background-position-x: 5px;
+      display: block;
+      width: 25px;
+      margin-right: 5px;
+    }
+    &-inst {
+      background-image: url('/image/instagram.svg');
+      background-repeat: no-repeat;
+      background-position-x: 5px;
+      display: block;
+      width: 25px;
+      margin-right: 5px;
+    }
+  }
+  &-title {
+    font-size: 10px;
+    font-weight: 700;
+  }
+  &-item {
+    margin-bottom: 20px;
+  }
+ }
+}
